@@ -1,0 +1,24 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav a {
+  color: white;
+}
+
+button {
+  display: none;
+}
+
+@media screen and (max-width: 564px) {
+  .nav {
+    display: none;
+  }
+  mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    display: flex;
+  }
+}

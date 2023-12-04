@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="foto">
+    <div class="main"
+      style="background-image: url(assets/IMG_6734.jpg); background-size: cover; background-repeat: no-repeat; background-position-y: top;">
+    </div>
+  </div>
+
+  <div class="col-8">
+    <div class="custom-rotating-text">
+      <div class="edrea_tm_home">
+        <h3 class="name">
+          Antony
+          <span class="cor">Diego</span>
+        </h3>
+      </div>
+
+      <div class="rotating-text">
+        <p>Habilidades</p>
+        <p>
+          <span *ngFor="let word of words; let i = index" class="word" [ngClass]="{ active: i === currentWordIndex }">
+            {{ word }}
+          </span>
+        </p>
+      </div>
+      <div class="sobre">
+        <h3>
+          Olá!!!<br>
+          Sou uma pessoa apaixonada por aprendizado e sempre busco expandir meus
+          conhecimentos.
+          Minha busca por aprendizado contínuo e disposição para enfrentar desafios
+          são características que me impulsionam a alcançar resultados de qualidade.
+          Estou muito animado para embarcar nessa nova oportunidade e fazer a diferença no seu projeto!
+        </h3>
+      </div>
+      <div class="botao">
+        <button mat-button style="background-color: var(--primary-color); color: #fff; width: 100%;"
+          (click)="openDialog()">Currículo</button>
+      </div>
+    </div>
+  </div>
+</div>

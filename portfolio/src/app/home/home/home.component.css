@@ -1,0 +1,96 @@
+/*
+CONTENT BODY
+*/
+
+@keyframes rotateWords {
+  10%,
+  100% {
+    transform: translateY(100%);
+  }
+  10%,
+  90% {
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes paraCima {
+  from {
+    background-color: aqua;
+  }
+  to {
+    background-color: blue;
+  }
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  animation-name: paraCima;
+  animation-duration: 4s;
+}
+
+.edrea_tm_home .name {
+  color: var(--primary-color);
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cor {
+  color: var(--accent-color);
+}
+
+.word {
+  opacity: 0;
+  transition: opacity 0.1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.rotating-text {
+  display: flex;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  transform: translateX(-80px);
+}
+
+.rotating-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-left: 30px;
+}
+
+.rotating-text .word {
+  margin-left: 190px;
+}
+
+.word.active {
+  opacity: 1;
+  animation: rotateWords 10s infinite;
+}
+
+.entrarEmContato {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 440px) {
+  .edrea_tm_home .name {
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

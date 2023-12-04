@@ -1,0 +1,43 @@
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+
+<mat-toolbar class="mat-elevation-z3" style="background: linear-gradient(90deg, rgba(255,5,52,1) 30%, rgba(73,29,136,1) 100%);
+  color: #fff; position: fixed; top: 0; width: 100%; z-index: 1000;">
+  <div class="container" style="display: flex; align-items: center;">
+    <div class="logo">
+      <span><a class="nav-link active" aria-current="page" routerLink="">Antony Diego</a></span>
+    </div>
+    <div class="nav" style="margin-left: auto;">
+      <span class="example-spacer"></span>
+      <span><a class="nav-link active" aria-current="page" routerLink="">Início</a></span>
+      <span><a class="nav-link active" aria-current="page" routerLink="/sobre">Sobre</a></span>
+      <span><a class="nav-link active" aria-current="page" routerLink="/portifolio">Portfolio</a></span>
+      <span><a class="nav-link active" aria-current="page" routerLink="/contato">Contato</a></span>
+    </div>
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon"
+      aria-label="Example icon-button with menu icon"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <span><a class="nav-link active" aria-current="page" routerLink="">Início</a></span>
+      </button>
+      <button mat-menu-item>
+        <span><a class="nav-link active" aria-current="page" routerLink="/sobre">Sobre</a></span>
+      </button>
+      <button mat-menu-item>
+        <span><a class="nav-link active" aria-current="page" routerLink="/portifolio">Portfolio</a></span>
+      </button>
+      <button mat-menu-item>
+        <span><a class="nav-link active" aria-current="page" routerLink="/contato">Contato</a></span>
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

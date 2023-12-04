@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Alinhar os elementos em coluna */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+main header {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+}
+
+mat-card {
+  width: 300px;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+}
+
+header p span {
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: var(--primary-color);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+header p span:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+mat-card {
+  height: 230px;
+  width: 180px;
+  align-items: center;
+}
+
+mat-card-subtitle {
+  margin-top: 20px;
+  color: var(--accent-color);
+}
+
+.mat-mdc-raised-button:not(:disabled) {
+  margin: auto;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease; /* Transição suave */
+}
+
+/* CSS para o efeito de foco (hover) */
+.card-hover-effect {
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra mais fraca como padrão */
+  transition: all 0.3s ease; /* Adicione uma transição suave */
+}
+
+.card-hover-effect:hover {
+  box-shadow: 0 1px 6px var(--accent-color); /* Aumente a sombra ao passar o mouse */
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .products {
+    display: flex;
+    justify-content: space-around;
+    transition: transform 0.3s ease;
+  }
+  mat-card {
+    width: auto;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="container">
+  <main>
+    <!-- Botões de navegação -->
+    <header>
+      <h3>Portfólio</h3>
+      <p>
+        <span (click)="left_mover()"><i class="fas fa-chevron-left" style="font-size: 0.5em;"></i></span>
+        <span (click)="right_mover()"><i class="fas fa-chevron-right" style="font-size: 0.5em;"></i></span>
+      </p>
+    </header>
+    <!-- Aqui vem o conteúdo do slider -->
+    <div id="productContainer" class="products">
+      <mat-card class="example-card" *ngFor="let product of products.slice(currentIndex, currentIndex + 4)"
+        class="card-hover-effect">
+        <img mat-card-image [src]="product.imagem">
+        <mat-card-content>
+          <mat-card-subtitle>{{ product.nome }}</mat-card-subtitle>
+          <br>
+
+        </mat-card-content>
+        <!-- <mat-card-actions>
+          <button mat-raised-button color="primary">Compre pelo WhatsApp</button>
+        </mat-card-actions> -->
+      </mat-card>
+    </div>
+  </main>
+</div>

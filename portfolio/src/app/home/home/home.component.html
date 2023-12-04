@@ -1,0 +1,24 @@
+<body>
+  <!-- CONTENT BODY -->
+
+  <div class="edrea_tm_home">
+    <h3 class="name">
+      Antony
+      <span class="cor">Diego</span>
+    </h3>
+  </div>
+
+  <div class="rotating-text">
+    <p>Habilidades</p>
+    <p>
+      <span *ngFor="let word of words; let i = index" class="word" [ngClass]="{ active: i === currentWordIndex }">
+        {{ word }}
+      </span>
+    </p>
+  </div>
+  <div class="entrarEmContato">
+    <button mat-flat-button style="background-color: var(--primary-color); color: #fff" routerLink="/contato">
+      Entrar em contato
+    </button>
+  </div>
+</body>

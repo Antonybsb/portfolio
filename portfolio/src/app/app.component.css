@@ -1,0 +1,28 @@
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.nav-item a {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.navbar {
+  padding-top: 40px;
+  background-color: #fff !important;
+  border-bottom: 1.5px solid var(--accent-color);
+}
+
+.nav-item a:hover {
+  color: #eb4a4c;
+}
+
+.navbar-brand:hover {
+  color: #eb4a4c;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #eb4a4c; /* ou a cor desejada para links ativos */
+}
