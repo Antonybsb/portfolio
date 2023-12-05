@@ -37,6 +37,10 @@ h3 {
 }
 
 @media screen and (max-width: 770px) {
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .content {
     display: flex;
     flex-direction: column;

@@ -96,28 +96,22 @@ mat-card-subtitle {
 
 @media screen and (max-width: 400px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
   }
   .products {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     transition: transform 0.3s ease;
   }
   mat-card {
-    width: auto;
-    margin: 10px;
+    width: 100%;
+    margin: 10px auto;
   }
 }
