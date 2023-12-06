@@ -67,13 +67,18 @@ header p span:hover {
 }
 
 mat-card {
-  height: 230px;
-  width: 180px;
+  height: 225px;
+  width: 270px;
   align-items: center;
 }
 
+mat-card-image {
+  height: 225px;
+  width: 270px;
+}
+
 mat-card-subtitle {
-  margin-top: 20px;
+  margin-top: 5px;
   color: var(--accent-color);
 }
 

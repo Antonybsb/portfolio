@@ -3,24 +3,10 @@ CONTENT BODY
 */
 
 @keyframes rotateWords {
-  10%,
-  100% {
-    transform: translateY(100%);
-  }
-  10%,
-  90% {
-    transform: translateY(0);
+  50% {
+    transform: translateX(-3%);
   }
 }
-
-/* @keyframes paraCima {
-  from {
-    background-color: aqua;
-  }
-  to {
-    background-color: blue;
-  }
-} */
 
 body {
   margin: 0;
@@ -30,6 +16,14 @@ body {
   height: 90vh;
   animation-name: paraCima;
   animation-duration: 4s;
+}
+
+.animacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: rotateWords 1.2s;
 }
 
 .edrea_tm_home .name {
@@ -82,8 +76,13 @@ body {
 
 .entrarEmContato {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 100px;
+}
+
+.btn {
+  margin: 5px;
 }
 
 @media screen and (max-width: 440px) {
