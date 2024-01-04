@@ -2,12 +2,6 @@
 CONTENT BODY
 */
 
-@keyframes rotateWords {
-  50% {
-    transform: translateX(-3%);
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -18,18 +12,21 @@ body {
   animation-duration: 4s;
 }
 
-.animacao {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: rotateWords 1.2s;
+.nomeSobrenome {
+  margin-top: 200px;
 }
 
-.edrea_tm_home .name {
+.corAntony {
   color: var(--primary-color);
   font-size: 60px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.corDiego {
+  color: var(--accent-color);
+  font-size: 60px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -41,33 +38,36 @@ body {
   opacity: 0;
   transition: opacity 0.1s;
   position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 25px;
+  font-size: 36px;
   font-weight: 500;
   color: var(--primary-color);
 }
 
 .rotating-text {
-  display: flex;
   font-family: sans-serif;
   font-weight: 600;
   font-size: 36px;
-  color: white;
   transform: translateX(-80px);
 }
 
-.rotating-text p {
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
+.rotating-text .habilidades {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 30px;
   color: var(--accent-color);
-  margin-left: 30px;
 }
 
-.rotating-text .word {
-  margin-left: 190px;
+.rotating-text .efectRotate {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-left: 180px;
 }
+
+/* .rotating-text .word {
+  margin-left: 220px;
+} */
 
 .word.active {
   opacity: 1;

@@ -8,17 +8,10 @@ body {
   overflow: hidden;
 }
 
-.container {
-  overflow: hidden;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  overflow: hidden;
 }
 
 main header {
@@ -28,17 +21,6 @@ main header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #f1f1f1;
-}
-
-.products {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-  transition: transform 0.3s ease;
-}
-
-mat-card {
-  width: 300px;
 }
 
 h3 {
@@ -61,15 +43,27 @@ header p span {
   border-radius: 3px;
 }
 
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+  margin: 20px;
+}
+
 header p span:hover {
   background: var(--primary-color);
   color: white;
 }
 
 mat-card {
-  height: 225px;
+  height: 300px;
   width: 270px;
   align-items: center;
+}
+
+mat-card .mdc-card__media {
+  height: 183px;
 }
 
 mat-card-image {
@@ -82,6 +76,15 @@ mat-card-subtitle {
   color: var(--accent-color);
 }
 
+mat-card-content a {
+  text-decoration: none;
+}
+
+/* .mat-card-image {
+  height: 267px;
+  width: 183px;
+} */
+
 .mat-mdc-raised-button:not(:disabled) {
   margin: auto;
   transition: background-color 0.3s ease, color 0.3s ease,
@@ -91,12 +94,12 @@ mat-card-subtitle {
 /* CSS para o efeito de foco (hover) */
 .card-hover-effect {
   border: 1px solid #f1f1f1;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra mais fraca como padrão */
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); /* Adicione uma sombra mais fraca como padrão */
   transition: all 0.3s ease; /* Adicione uma transição suave */
 }
 
 .card-hover-effect:hover {
-  box-shadow: 0 1px 6px var(--accent-color); /* Aumente a sombra ao passar o mouse */
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75); /* Aumente a sombra ao passar o mouse */
 }
 
 @media screen and (max-width: 400px) {

@@ -1,12 +1,13 @@
-<div class="container">
-  <div class="foto">
-    <div class="main"
-      style="background-image: url(assets/IMG_6734.jpg); background-size: cover; background-repeat: no-repeat; background-position-y: top;">
-    </div>
-  </div>
+<div class="container-lg d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+  <div class="sobrePai">
 
-  <div class="col-8">
-    <div class="custom-rotating-text">
+    <div class="foto">
+      <div class="main animate__animated animate__fadeInLeft"
+        style="background-image: url(assets/IMG_6734.jpg); background-size: cover; background-repeat: no-repeat; background-position-y: top;">
+      </div>
+    </div>
+
+    <div class="custom-rotating-text animate__animated animate__fadeInRight">
       <div class="edrea_tm_home">
         <h3 class="name">
           Antony
@@ -26,16 +27,21 @@
         <h3>
           Olá!!!<br>
           Sou uma pessoa apaixonada por aprendizado e sempre busco expandir meus
-          conhecimentos.
+          conhecimentos. <br>
           Minha busca por aprendizado contínuo e disposição para enfrentar desafios
-          são características que me impulsionam a alcançar resultados de qualidade.
+          são características que me impulsionam a alcançar resultados de qualidade. <br>
           Estou muito animado para embarcar nessa nova oportunidade e fazer a diferença no seu projeto!
         </h3>
       </div>
-      <div class="botao">
+      <a href="../../assets/curriculo/AntonyDiego_Currículo.pdf" target="_blank">
+        <button mat-button style="background-color: var(--primary-color); color: #fff; width: 50%;">Download Currículo
+        </button>
+      </a>
+
+      <!-- <div class="botao">
         <button mat-button style="background-color: var(--primary-color); color: #fff; width: 100%;"
           (click)="openDialog()">Currículo</button>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

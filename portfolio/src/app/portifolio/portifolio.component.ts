@@ -11,9 +11,8 @@ export class PortifolioComponent {
 
   products: Jobs[] = [
     {
-      imagem: 'assets/products/emBreve.png',
-      nome: 'Em Breve 1'
-
+      imagem: 'assets/products/menu.png',
+      nome: 'Projeto desenvolvido juntamente com o professor Weverton Lima. Curso FrontLee',
     },
     {
       imagem: 'assets/products/emBreve.png',

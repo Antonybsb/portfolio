@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "~animate.css/animate.min.css";
+
 body {
   margin: 0;
   justify-content: center;
@@ -9,17 +11,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+/* .container {
   width: 900px;
-}
+} */
 
-html,
-body {
-  height: 100%;
+.container-sm {
+  max-width: 540px;
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+.container-md {
+  max-width: 720px;
+}
+.container-lg {
+  max-width: 960px;
+}
+.container-xl {
+  max-width: 1140px;
+}
+.container-xxl {
+  max-width: 1320px;
 }
 
 :root {

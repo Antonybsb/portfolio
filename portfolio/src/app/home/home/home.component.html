@@ -1,27 +1,26 @@
 <body>
   <!-- CONTENT BODY -->
-  <div class="animacao">
-    <div class="edrea_tm_home">
-      <h3 class="name">
-        Antony
-        <span class="cor">Diego</span>
-      </h3>
-    </div>
 
-    <div class="rotating-text">
-      <p>Habilidades</p>
-      <p>
-        <span *ngFor="let word of words; let i = index" class="word" [ngClass]="{ active: i === currentWordIndex }">
+  <section class="header">
+    <div class="container-lg d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+
+      <div class="nomeSobrenome animate__animated animate__fadeInDown">
+        <span class="corAntony">Antony </span>
+        <span class="corDiego">Diego</span>
+      </div>
+
+      <div
+        class="rotating-text text-center d-flex flex-column mb-2 animate__animated animate__fadeIn animate__delay-1s">
+        <span class="habilidades mb-2">Habilidades</span>
+        <span *ngFor="let word of words; let i = index" class="efectRotate word"
+          [ngClass]="{ active: i === currentWordIndex }">
           {{ word }}
         </span>
-      </p>
+      </div>
+      <div class="entrarEmContato animate__animated animate__fadeInUp">
+        <a class="btn  text-start mb-3" href="https://wa.me/5561992678046" role="button" target="_blank"
+          style="background-color: var(--primary-color); color: #fff;">Entre em contato 61 99267-8046</a>
+      </div>
     </div>
-    <div class="entrarEmContato">
-      <button mat-flat-button style="background-color: var(--primary-color); color: #fff" routerLink="/contato">
-        Entrar em contato
-      </button>
-      <a class="btn  text-center mb-3" href="https://www.linkedin.com/in/antony-diego/details/certifications/"
-        role="button" target="_blank" style="background-color: var(--primary-color); color: #fff">Certificados</a>
-    </div>
-  </div>
+  </section>
 </body>

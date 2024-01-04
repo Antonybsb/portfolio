@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<div class="container">
-  <main>
+<div class="container-lg d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+  <main class="container-lg">
     <!-- Botões de navegação -->
-    <header>
+    <header class=" animate__animated animate__fadeInUp">
       <h3>Portfólio</h3>
       <p>
         <span (click)="left_mover()"><i class="fas fa-chevron-left" style="font-size: 0.5em;"></i></span>
@@ -11,12 +11,14 @@
       </p>
     </header>
     <!-- Aqui vem o conteúdo do slider -->
-    <div id="productContainer" class="products">
+    <div id="productContainer" class="products animate__animated animate__fadeInUp animate__delay-1s">
       <mat-card class="example-card" *ngFor="let product of products.slice(currentIndex, currentIndex + 3)"
         class="card-hover-effect">
         <img mat-card-image [src]="product.imagem">
         <mat-card-content>
-          <mat-card-subtitle>{{ product.nome }}</mat-card-subtitle>
+          <a href="https://modelmenuonline.000webhostapp.com/" target="_blank">
+            <mat-card-subtitle>{{ product.nome }}</mat-card-subtitle>
+          </a>
           <br>
         </mat-card-content>
       </mat-card>
