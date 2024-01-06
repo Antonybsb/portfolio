@@ -1,69 +1,51 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-} */
-
-.sobrePai {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: auto;
+.contorno {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 15px;
   overflow: hidden;
 }
 
 .main {
-  height: 300px;
+  height: 320px;
   width: 300px;
   border-radius: 15px;
 }
 
-/* .row {
-  margin: auto;
+.sobre {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 200px;
-} */
-
-.custom-rotating-text {
-  display: flex;
-  flex-direction: column; /* Alinhar os elementos em coluna */
-  justify-content: center;
-  text-align-last: left;
-  margin-left: 25px;
+  flex-direction: column;
+  padding: 15px;
+  text-align: start;
+  align-content: space-around;
 }
 
-.custom-rotating-text a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.edrea_tm_home .name {
+.corAntony {
   color: var(--primary-color);
   font-family: "Poppins", sans-serif;
-  font-size: 36px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.edrea_tm_home .habilidades {
-  background-color: #eb4a4c;
+.corDiego {
+  color: var(--accent-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
   font-weight: 500;
-  color: #a2a2a2;
+  text-transform: uppercase;
 }
 
-.cor {
+.rotating-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.habilidades {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
+  margin-right: 190px;
+  font-size: 30px;
   color: var(--accent-color);
 }
 
@@ -71,28 +53,11 @@ body {
   opacity: 0;
   transition: opacity 0.1s;
   position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 20px;
+  margin-left: 200px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: var(--primary-color);
-  text-align: center;
-}
-
-.rotating-text {
-  transform: translateX(-20px);
-}
-
-.rotating-text p {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--accent-color);
-  margin-left: 20px;
-}
-
-.rotating-text .word {
-  margin-left: 150px;
 }
 
 .word.active {
@@ -100,72 +65,16 @@ body {
   animation: rotateWords 10s infinite;
 }
 
-.sobre h3 {
-  color: var(--accent-color);
+.textSobre {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 16px;
   text-align: justify;
+  margin-top: 15px;
+  color: var(--primary-color);
 }
 
-.botao {
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 1000px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-  }
-  .main {
-    height: 300px;
-    width: 300px;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-  }
-  /* .col-8 {
-    width: auto;
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 40px;
-  } */
-  .rotating-text {
-    display: flex;
-    margin-left: 30px;
-  }
-  .edrea_tm_home {
-    width: auto;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-  .rotating-text p {
-    justify-content: center;
-    align-items: center;
-  }
-  .rotating-text word {
-    justify-content: center;
-    align-items: center;
-  }
-  .sobre {
-    justify-content: center;
-    align-items: center;
-  }
-  button {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 70px;
-  }
+.downloadCurriculo {
+  margin-top: 20px;
 }
 
 @keyframes rotateWords {
@@ -176,5 +85,81 @@ body {
   10%,
   90% {
     transform: translateY(0);
+  }
+}
+
+/*==================== RESPONSIVIDADE ====================*/
+
+/* Desktop (col-lg) 992px+ */
+@media (min-width: 992px) {
+}
+
+/* Desktop e Tablets (col-md) 768px a 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Tablets (col-sm) 576px a 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+  .no-mobile {
+    display: none !important;
+  }
+  .col-one {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+
+  /*==================== RESPONSIVIDADE SOBRE ====================*/
+
+  .contorno {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .sobre {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nomeSobrenome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nomeSobrenome .corAntony {
+    font-size: 45px;
+  }
+
+  .nomeSobrenome .corDiego {
+    font-size: 45px;
+  }
+
+  .rotating-text .habilidades {
+    font-size: 25px;
+    margin-right: 135px;
+    margin-top: 10px;
+  }
+
+  .rotating-text .word {
+    font-size: 25px;
+    margin-left: 165px;
+    margin-top: 10px;
+  }
+
+  .foto {
+    display: none;
+  }
+
+  .textSobre {
+    text-align: start;
   }
 }

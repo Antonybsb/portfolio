@@ -1,51 +1,66 @@
 <div class="container-lg d-flex flex-row align-items-center justify-content-center" style="height: 100vh;">
-
-  <div class="row">
-    <div class="col-12">
-      <div class="foto">
-        <div class="main animate__animated animate__fadeInLeft"
-          style="background-image: url(assets/EAECEE34-B8C9-42E5-966D-2B63A25CD253.jpg); background-size: cover; background-repeat: no-repeat; background-position-y: top;">
+  <div class="contorno container-lg d-flex flex-row align-items-center justify-content-center">
+    <div class="row">
+      <div class="col-12">
+        <div class="foto">
+          <div class="main animate__animated animate__fadeInLeft"
+            style="background-image: url(assets/EAECEE34-B8C9-42E5-966D-2B63A25CD253.jpg); background-size: cover; background-repeat: no-repeat; background-position-y: top;">
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="col-12">
-      <div class="custom-rotating-text animate__animated animate__fadeInRight">
-        <div class="edrea_tm_home">
-          <h3 class="name">
-            Antony
-            <span class="cor">Diego</span>
-          </h3>
+    <div class="sobre animate__animated animate__fadeInRight">
+
+      <div class="col-12 col-one">
+        <div class="nomeSobrenome">
+          <span class="corAntony">Antony </span>
+          <span class="corDiego"> Diego</span>
         </div>
+      </div>
 
-        <div class="rotating-text">
-          <p>Habilidades</p>
-          <p>
-            <span *ngFor="let word of words; let i = index" class="word" [ngClass]="{ active: i === currentWordIndex }">
+
+      <div class="row justify-content-between">
+        <div class="col-12 mt-2">
+          <div class="rotating-text animate__animated animate__fadeIn animate__delay-1s">
+            <span class="habilidades">Habilidades:</span>
+            <span class="word" *ngFor="let word of words; let i = index" [ngClass]="{ active: i === currentWordIndex }">
               {{ word }}
             </span>
-          </p>
+          </div>
         </div>
-        <div class="sobre">
-          <h3>
-            Olá!!!<br>
-            Sou uma pessoa apaixonada por aprendizado e sempre busco expandir meus
-            conhecimentos. <br>
-            Minha busca por aprendizado contínuo e disposição para enfrentar desafios
-            são características que me impulsionam a alcançar resultados de qualidade. <br>
-            Estou muito animado para embarcar nessa nova oportunidade e fazer a diferença no seu projeto!
-          </h3>
-        </div>
-        <a href="../../assets/curriculo/AntonyDiego_Currículo.pdf" target="_blank">
-          <button mat-button style="background-color: var(--primary-color); color: #fff; width: 50%;">Download
-            Currículo
-          </button>
-        </a>
       </div>
+
+
+      <div class="textSobre col-12">
+        <p>
+          Olá!!!<br>
+          Sou uma pessoa apaixonada por aprendizado e sempre busco expandir meus
+          conhecimentos. <br>
+          Minha busca por aprendizado contínuo e disposição para enfrentar desafios
+          são características que me impulsionam a alcançar resultados de qualidade. <br>
+          Estou muito animado para embarcar nessa nova oportunidade e fazer a diferença no seu projeto!
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="downloadCurriculo">
+            <a class="btn text-start" href="../../assets/curriculo/AntonyDiego_Currículo.pdf" role="button"
+              target="_blank"
+              style="background-color: var(--primary-color); color: #fff; font-family: Poppins, sans-serif;">
+              Download
+              Currículo
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+
   </div>
+
 
 
 </div>
