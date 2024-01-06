@@ -12,7 +12,7 @@
     </header>
     <!-- Aqui vem o conteúdo do slider -->
     <div id="productContainer" class="products animate__animated animate__fadeInUp animate__delay-1s">
-      <mat-card class="example-card" *ngFor="let product of products.slice(currentIndex, currentIndex + 3)"
+      <mat-card class="example-card" *ngFor="let product of products.slice(currentIndex, currentIndex + maxCards)"
         class="card-hover-effect">
         <img mat-card-image [src]="product.imagem">
         <mat-card-content>

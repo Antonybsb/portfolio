@@ -8,6 +8,31 @@ import { Jobs } from '../interfaces/jobs';
 })
 export class PortifolioComponent {
 
+  maxCards!: number;
+
+  ngOnInit() {
+
+    this.setMaxCards();
+
+    window.addEventListener('resize', this.onResize.bind(this));
+
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('resize', this.onResize.bind(this));
+  }
+
+  onResize(_event: any) {
+    this.setMaxCards();
+  }
+
+  private setMaxCards() {
+    if (window.innerWidth < 768) {
+      this.maxCards = 1;
+    } else {
+      this.maxCards = 3;
+    }
+  }
 
   products: Jobs[] = [
     {
@@ -63,7 +88,7 @@ export class PortifolioComponent {
   }
 
   right_mover() {
-    const maxIndex = this.products.length - 4; // Mostrar 4 cards por vez
+    const maxIndex = this.products.length - this.maxCards; // Mostrar 4 cards por vez
     if (this.currentIndex < maxIndex) {
       this.currentIndex++;
     }
