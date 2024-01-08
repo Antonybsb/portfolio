@@ -60,6 +60,7 @@ body {
 .btn {
   margin: 25px;
   font-family: "Poppins", sans-serif;
+  background-color: var(--secondary-color) !important;
 }
 
 /*==================== RESPONSIVIDADE ====================*/

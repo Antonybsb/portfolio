@@ -64,6 +64,7 @@ mat-card {
 
 mat-card .mdc-card__media {
   height: 183px;
+  border: solid 1px var(--accent-color);
 }
 
 mat-card-image {
@@ -101,6 +102,8 @@ mat-card-content a {
 
 .card-hover-effect:hover {
   box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75); /* Aumente a sombra ao passar o mouse */
+  transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
 
 /* @media screen and (max-width: 400px) {

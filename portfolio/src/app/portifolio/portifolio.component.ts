@@ -27,10 +27,12 @@ export class PortifolioComponent {
   }
 
   private setMaxCards() {
-    if (window.innerWidth < 768) {
-      this.maxCards = 1;
-    } else {
+    if (window.innerWidth >= 835) {
       this.maxCards = 3;
+    } else if (window.innerWidth >= 768) {
+      this.maxCards = 2;
+    } else {
+      this.maxCards = 1;
     }
   }
 
@@ -88,7 +90,8 @@ export class PortifolioComponent {
   }
 
   right_mover() {
-    const maxIndex = this.products.length - this.maxCards; // Mostrar 4 cards por vez
+    debugger
+    const maxIndex = this.products.length - this.maxCards;
     if (this.currentIndex < maxIndex) {
       this.currentIndex++;
     }
