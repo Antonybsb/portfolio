@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@angular/cdk": "^17.0.4",
+    "@angular/material": "^17.0.4",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "animate.css": "^4.1.1",
+    "pdfjs-dist": "^4.0.189"
+  }
+}
